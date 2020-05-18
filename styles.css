@@ -1,0 +1,146 @@
+:root {
+    --main-color: #754DF9;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Box sizing will toggle padding to fall inside or outside */
+    /* font-family: 'Roboto', sans-serif; */
+    
+}
+
+.title {
+    font-family: 'Jost', sans-serif;
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+    font-family: 'Jost', sans-serif;
+}
+
+#nav-menu {
+    text-align: right;
+}
+
+#nav-menu li {
+ display: inline-block;
+ margin: 10px;
+ font-size: 16px;
+ font-weight: 400;
+}
+
+.main-title {
+    font-size: 45pt;
+}
+
+.main-container {
+    border: 5px solid var(--main-color);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side {
+    flex: .3;
+    background-color: var(--main-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profile-img {
+    /* min-width: 30%; */
+    max-width: 60%;
+    width: 100%;
+    border-radius: 50%;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.7em;
+}
+
+.header-p{
+    font-family: 'Jost', sans-serif;
+    color: whitesmoke;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex: .7;
+    background-color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+.header-hero {
+    display: flex;
+    height: 100%;
+}
+
+#title-hero {
+    font-size: 5em;
+    text-align: center;
+}
+.purple-text {
+    color:var(--main-color);
+}
+
+#download-btn {
+    background-color: var(--main-color);
+    border: 25px;
+    padding: 10px 40px;
+    border-radius: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+#download-btn:hover {
+    background-color: rgba(92, 57, 207);
+    /* font-weight: 600; */
+}
+
+.intro-text {
+    color: black;
+    flex: 1;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.social {
+    text-align: right;
+    padding: 5px;
+    align-self: center;
+}
+
+.icon {
+    color:var(--main-color);
+}
+
+.follow-me-text {
+    writing-mode: vertical-lr;
+    padding-bottom: 15px;
+    font-size: 16pt;
+    color: var(--main-color);
+}
+.center {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 480px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
