@@ -1,7 +1,7 @@
 :root {
     --main-color: #14213D;
     --second-color: #E6E6E6;
-    /* --background-color:  */
+    --third-color: #FCA311
 }
 
 * {
@@ -164,7 +164,7 @@ body {
 /* BUTTON CONFIGS */
 
 #download-btn {
-    background-color: #FCA311;
+    background-color: var(--third-color);
     border: 25px;
     padding: 10px 40px;
     border-radius: 25px;
@@ -196,7 +196,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #D6820E;
+    background-color: var(--third-color);
     /* font-weight: 600; */
 }
 
@@ -294,7 +294,7 @@ body {
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
     background-color: var(--main-color);
-    margin-bottom: 15px;
+    margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
@@ -328,6 +328,33 @@ body {
    
     /* align-content: center;
     justify-items: center; */
+}
+
+/* ------------------------------------------- */
+/* EDUCATION SECTION */
+
+.education {
+    background-color: var(--third-color);
+    width: 100vw;
+    height: 50vh;
+    margin-top: 0;
+    padding: 0 2em;
+    margin-bottom: 40px;
+    color: var(--main-color);
+}
+
+.education-title {
+    color: var(--second-color);
+}
+/* ------------------------------------------- */
+/* FOOTER SECTION */
+
+.footer {
+    background-color: var(--second-color);
+    margin-top: 20px;
+    padding: 0 2em;
+    margin-bottom: 40px;
+    color: var(--main-color);
 }
 
 /* ------------------------------------------- */
