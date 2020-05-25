@@ -1,6 +1,7 @@
 :root {
     --main-color: #14213D;
     --second-color: #E6E6E6;
+    /* --background-color:  */
 }
 
 * {
@@ -47,6 +48,10 @@ h2 {
     flex-direction: column;
     text-align: center;
 }
+
+body {
+    background-color: #E6E6E6;
+}
 /* -------------------------------------------------------- */
 /* LEFT SIDE */
 
@@ -61,6 +66,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .main-title {
@@ -97,7 +103,7 @@ h2 {
     border-color: var(--main-color);
     left: 43%;
     z-index: 1;
-    box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.25), -8px -8px 15px 0 #464F64;
+    /* box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.25), -8px -8px 15px 0 #14203D; */
 
 }
 
@@ -114,7 +120,7 @@ h2 {
     border-color: var(--main-color);
     left: 37.5%;
     z-index: 2;
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 #ffffff;
+    box-shadow: 17px 17px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 #ffffff;
 
 }
 
@@ -185,6 +191,8 @@ h2 {
     border-radius: 25px;
     color: var(--second-color);
     text-decoration: none;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.25), -6px -6px 12px 0 #f8f8f8;
+    margin-bottom: 25px;
 }
 
 .btn:hover {
@@ -225,7 +233,7 @@ h2 {
     font-family: 'Jost', sans-serif;
     font-size: 30pt;
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -233,21 +241,27 @@ h2 {
     height: 33%;
 }
 .skill-boxes {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-self: center;
-    font-size: 16px;
+    font-size: 1rem;
     justify-content: space-evenly;
 }
 .html, .css, .javascript {
+    display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 20rem;
+    width: 15rem;
     padding: 1em;
-    padding-bottom: 5px;
+    padding-bottom: 1em;
     margin: 1em; 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     border: 1px solid var(--second-color);
     box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.25), -6px -6px 12px 0 #f8f8f8;
     transition: transform 0.04s;
@@ -260,20 +274,48 @@ h2 {
 }
 
 .skills-text {
+    height: inherit;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 15px;
+    margin-top: 15px;
 }
 
 /* ------------------------------------------- */
 /* PORTFOLIO SECTION */
 
+.portfolio-section {
+    background-color: (var(--main-color));
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-title {
+    display: flex;
+    align-self: inherit;
+    margin: 10rem;
+
+}
+
 .portfolio-grid {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-items: center;
-    width: 70vw;
-    height: 100vh;
-    background-color: blueviolet;
+    flex-wrap: wrap;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+   
+    /* align-content: center;
+    justify-items: center; */
 }
 
 /* ------------------------------------------- */
