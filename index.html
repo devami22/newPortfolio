@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     type="text/css" />
 </head>
 <body>
@@ -15,7 +14,7 @@
             <div class="top-container">
                 <div class="left-side">
                     <div class="title">
-                        <h1 class="main-title">Portfolio</h1>
+                        <h1 class="main-title">portfolio</h1>
                     </div>
                     <div class="circles">
                         <img class="profile-img" src="images/mil-profile.JPG" alt="Mil's profile image">
@@ -27,22 +26,30 @@
                     </div>
                 </div>
                 <div class="right-side">
+                    <div class="bg"></div>
+                    <div class="bg bg2"></div>
+                    <div class="bg bg3"></div>
                     <nav>
                         <ul id="nav-menu">
-                            <li>ABOUT ME</li>
-                            <li>PORTFOLIO</li>
-                            <li id="download-btn"><a href>DOWNLOAD CV</a></li>
+                            <a href=""><li>about</li></a>
+                            <a href=""><li>work</li></a>
+                            <a href=""><li>education</li></a>
+                            <a href=""><li>contact</li></a>
+                            <li id="download-btn"><a href>download cv</a></li>
                         </ul>
                     </nav>
                     <div class="header-hero">
                         <div class="intro-text">
-                            <h1 id="title-hero">MY <span class="hero-text">WORK</span></h1>
-                            <p class="subtitle">Web Developer & Birria Aficionado</p>
+                            <h1 id="title-hero">hi, i'm <span class="hero-text">mil</span></h1>
+                            <p class="subtitle">web developer | mba graduate | aerospace engineer</p>
+                            <p class="about-me-blurb">
+                                i'm passionate about web development! i quit my management job in one of the world's biggest aerosapce companies to follow my passion.
+                            </p>
                         </div>
                         <div class="social">
                             <ul class="center">
-                                <li class="follow-me-text">Follow me on: ----------</li>
-                                <li><img src="https://img.icons8.com/android/16/000000/facebook-new.png"/></li>
+                                <li class="follow-me-text">Follow me on: </li>
+                                <li><img class="icon" src="https://img.icons8.com/android/16/000000/facebook-new.png"/></li>
                                 <li><img src="https://img.icons8.com/android/16/000000/twitter.png"/></li>
                                 <li><img src="https://img.icons8.com/android/16/000000/linkedin.png"/></li>
                                 <li><img src="https://img.icons8.com/material-two-tone/20/000000/github.png"/></li>
@@ -54,48 +61,46 @@
         </section>
         <section>
             <div class="skills-section">
-                <div class="skills-title">
-                    <h2>MY SKILLS</h2>
-                </div>
+                <h2 class="skills-title">my skills</h2>
                 <div class="skill-boxes">
-                    <a href="">
-                        <div class="html">
-                            <h3>HTML5</h3>
-                            <p><img src="https://img.icons8.com/color/96/000000/html-5.png"/></p>
-                            <p class="skills-text">Sample text about HTML5 skills.</p>
-                            <p class="btn">Learn More</p>
+                    <a class="html" href="">
+                        <div>
+                            <h3>html5</h3>
+                            <p><img src="https://img.icons8.com/color/48/000000/html-5.png"/></p>
+                            <!-- <p class="skills-text">Sample text about HTML5 skills.</p> -->
+                            <!-- <p class="btn">Learn More</p> -->
                         </div>
                     </a>
-                    <a href="">
-                        <div class="css">
-                            <h3>CSS3</h3>
-                            <p><img src="https://img.icons8.com/color/96/000000/css3.png"/></i></p>
-                            <p class="skills-text">Sample text about CSS3 skills</p>
-                            <p class="btn">Learn More</p>
+                    <a class="css" href="">
+                        <div>
+                            <h3>css3</h3>
+                            <p><img src="https://img.icons8.com/color/48/000000/css3.png"/></i></p>
+                            <!-- <p class="skills-text">Sample text about CSS3 skills</p> -->
+                            <!-- <p class="btn">Learn More</p> -->
                         </div>
                     </a>
-                    <a href="">
-                        <div class="javascript">
-                            <h3>JavaScript</h3>
-                            <p><img src="https://img.icons8.com/color/96/000000/javascript-logo-1.png"/></p>
-                            <p class="skills-text">Sample text about JavaScript skills</p>
-                            <p class="btn">Learn More</p>
+                    <a class="javascript" href="">
+                        <div>
+                            <h3>javascript</h3>
+                            <p><img src="https://img.icons8.com/color/48/000000/javascript.png"/></p>
+                            <!-- <p class="skills-text">Sample text about JavaScript skills</p> -->
+                            <!-- <p class="btn">Learn More</p> -->
                         </div>
                     </a>
-                    <a href="">
-                        <div class="react">
-                            <h3>React</h3>
-                            <p><img src="https://img.icons8.com/nolan/96/react-native.png"/></p>
-                            <p class="skills-text">Sample text about React skills</p>
-                            <p class="btn">Learn More</p>
+                    <a class="react" href="">
+                        <div>
+                            <h3>react</h3>
+                            <p><img src="https://img.icons8.com/nolan/48/react-native.png"/></p>
+                            <!-- <p class="skills-text">Sample text about React skills</p> -->
+                            <!-- <p class="btn">Learn More</p> -->
                         </div>
                     </a>
-                    <a href="">
-                        <div class="bootstrap">
-                            <h3>Bootsrap 4</h3>
-                            <p><img src="https://img.icons8.com/color/96/000000/bootstrap.png"/></p>
-                            <p class="skills-text">Sample text about React skills</p>
-                            <p class="btn">Learn More</p>
+                    <a class="bootstrap" href="">
+                        <div>
+                            <h3>bootsrap 4</h3>
+                            <p><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/></p>
+                            <!-- <p class="skills-text">Sample text about Bootstrap skills</p> -->
+                            <!-- <p class="btn">Learn More</p> -->
                         </div>
                     </a>
                 </div>
@@ -103,7 +108,7 @@
         </section>
         <section>
             <div class="portfolio-section">
-                <h2 class="portfolio-title">PAST PROJECTS</h2>            
+                <h2 class="portfolio-title">my work</h2>            
                 <div class="portfolio-grid">
                     <img class="portfolio-pics" src="images/1.jpg" alt="mil's portfolio images">
                     <img class="portfolio-pics" src="images/2.jpg" alt="mil's portfolio images">
@@ -118,12 +123,12 @@
         </section>
         <section>
             <div class="education">
-                <h2 class="education-title">EDUCATION</h2> 
+                <h2 class="education-title">education</h2> 
             </div>
         </section>
         <footer>
-            <div class="footer-section">
-                <h2 class="footer-title">FOOTER</h2> 
+            <div class="contact">
+                <h2 class="contact-title">contact</h2> 
             </div>
         </footer>
 
