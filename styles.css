@@ -3,6 +3,9 @@
     --second-color: #E6E6E6;
     --third-color: #FCA311;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -303,7 +306,7 @@ body {
 /* ------------------------------------------- */
 /* SKILLS SECTION */
 
-.skills-section {
+#skills-section {
     background-color: #E6E6E6;
     font-family: 'Jost', sans-serif;
     font-size: 30pt;
@@ -368,7 +371,7 @@ body {
 /* ------------------------------------------- */
 /* PORTFOLIO SECTION */
 
-.portfolio-section {
+#portfolio-section {
     display: flex;
     flex-direction: column;
     display: flex;
@@ -414,7 +417,7 @@ body {
 /* ------------------------------------------- */
 /* EDUCATION SECTION */
 
-.education {
+#education {
     background-color: var(--third-color);
     width: 100vw;
     height: 50vh;
@@ -431,7 +434,7 @@ body {
 /* ------------------------------------------- */
 /* FOOTER SECTION */
 
-.contact {
+#contact {
     background-color: var(--second-color);
     height: 30vh;
     margin-top: 0px;
