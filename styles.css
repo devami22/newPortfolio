@@ -339,7 +339,7 @@ body {
     flex-wrap: wrap;
     font-size: 1rem;
     box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.25), -6px -6px 12px 0 #f8f8f8;
-    padding: 0 50px;
+    padding: 4rem 5rem;
     margin: 2%;
     width: 80%;
     height: auto;
@@ -349,7 +349,7 @@ body {
     align-self: center;
     justify-self: center;
     margin-top: 0;
-    padding: 0;
+    padding: 2rem;
     margin-bottom: 5px;
     font-family: 'DM Mono', monospace;
 }
@@ -367,7 +367,8 @@ body {
 
 .html, .css, .and, .javascript, .react, .node{
     align-self: center;
-    padding: 1rem;
+    margin: 5rem 8rem;
+    padding: 1rem 0rem;;
     min-width: 100px;
     margin: 5px;
 }
