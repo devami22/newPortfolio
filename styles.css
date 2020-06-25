@@ -63,7 +63,7 @@ h2 {
 }
 
 body {
-    background-color: #E6E6E6;
+    background-color: var(--second-color);
 }
 
 
@@ -316,7 +316,7 @@ body {
     border-top-right-radius: 300px;
     border-top: 15px solid var(--main-color);
     /* border-right: 15px solid var(--main-color); */
-    background-color: #E6E6E6;
+    background-color: var(--second-color);
     font-family: 'Jost', sans-serif;
     font-size: 30pt;
     padding-top: 30px;
@@ -333,18 +333,16 @@ body {
     border-top-right-radius: 250px 300px;
     justify-content: center;
     align-self: center;
-    display: block;
     font-family: 'DM Mono', monospace;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     font-size: 1rem;
-    /* justify-content: center; */
     box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.25), -6px -6px 12px 0 #f8f8f8;
-    /* border-radius: 25px; */
-    padding: 0 15px;
+    padding: 0 50px;
     margin: 2%;
+    width: 80%;
+    height: auto;
 }
 
 .skills-title {
@@ -356,32 +354,18 @@ body {
     font-family: 'DM Mono', monospace;
 }
 
-.skills{
-    border-bottom-left-radius: 250px 300px;
-    border-top-right-radius: 250px 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    /* min-width: 400px; */
-    height: 150px;
-    padding: 5px;
-    margin: 2%;
-    margin-left: 1%;
-    margin-right: 1%;
-    border: 1px solid var(--second-color);
-    box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.25), -6px -6px 12px 0 #f8f8f8;
-    /* border-radius: 25px; */
-    padding: 0 3.5rem;
-    margin: 2%;
+
+.skill-box:hover {
+    background-color: var(--third-color);
 }
 
-.skills:hover {
-    transform: scale(1.02);
+.html:hover, .css:hover, .and:hover, .javascript:hover, .react:hover, .node:hover {
+    transition: transform 0.3s;
+    transform: scale(1.05, 1.1);
+
 }
 
-.html, .css, .and, .javascript, .react, .bootstrap{
+.html, .css, .and, .javascript, .react, .node{
     align-self: center;
     padding: 1rem;
     min-width: 100px;
@@ -390,6 +374,10 @@ body {
 
 .learning {
     color: var(--third-color);
+}
+
+.hover {
+    color: var(--main-color)
 }
 /* ------------------------------------------- */
 /* PORTFOLIO SECTION */
@@ -480,141 +468,72 @@ body {
 .education-bkg {
 background-color: var(--main-color);
 }
-.timeline {
-    white-space: nowrap;
-    overflow-x: hidden;
-  }
-  
-  .timeline ol {
-    font-size: 0;
-    width: 100vw;
-    padding: 250px 0;
-    transition: all 1s;
-  }
-  
-  .timeline ol li {
-    position: relative;
-    display: inline-block;
-    list-style-type: none;
-    width: 150px;
-    height: 3px;
-    background: #fff;
-  }
-  
-  .timeline ol li:last-child {
-    width: 150px;
-  }
-  
-  .timeline ol li:not(:first-child) {
-    margin-left: 4px;
-  }
-  
-  .timeline ol li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 1px);
-    bottom: 0;
-    width: 12px;
-    height: 12px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: #F45B69;
-  }
-  
-  .timeline ol li div {
-    
-    position: absolute;
-    left: calc(100% + 7px);
-    width: 280px;
-    padding: 15px;
-    font-size: 0.8rem;
-    font-family: 'DM Mono', monospace;
-    white-space: normal;
-    color: black;
-    background: white;
-  }
-  
-  .timeline ol li div::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  
-  .timeline ol li:nth-child(odd) div {
-    top: -16px;
-    transform: translateY(-100%);
-  }
-  
-  .timeline ol li:nth-child(odd) div::before {
-    top: 100%;
-    border-width: 8px 8px 0 0;
-    border-color: white transparent transparent transparent;
-  }
-  
-  .timeline ol li:nth-child(even) div {
-    top: calc(100% + 16px);
-  }
-  
-  .timeline ol li:nth-child(even) div::before {
-    top: -8px;
-    border-width: 8px 0 0 8px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  .timeline time {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  
-  /* TIMELINE ARROWS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  
-  .timeline .arrows {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .timeline .arrows .arrow__prev {
-    margin-right: 20px;
-  }
-  
-  .timeline .disabled {
-    opacity: .5;
-  }
-  
-  .timeline .arrows img {
-    width: 25px;
-    height: 25px;
-  }
-  
-  
+
 
 #education {
     border-top-left-radius: 250px;
     background-color: var(--third-color);
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 0 2em;
     margin-bottom: 0;
     color: var(--main-color);
-    height: auto;
+    height: fit-content;
 }
 
 .education-title {
     font-family: 'DM Mono', monospace;
     color: var(--main-color);
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 25px;
 }
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-bottom: 0;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.year-block {
+    text-align: center;
+    border-top-right-radius: 10px;
+    margin: 0.5rem;
+    width: 450px;
+    height: 180px;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    /* border: 2px solid var(--second-color); */
+}
+
+.year {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 10px 0 0px 0;
+    padding: 7px;
+    background-color: var(--second-color);
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
+    color: var(--main-color);
+    border-top: thick solid red;
+}
+
+.info {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 15px;
+    font-family: 'DM Mono', monospace;
+}
+
+
+
 /* ------------------------------------------- */
 /* FOOTER SECTION */
 
