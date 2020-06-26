@@ -553,10 +553,10 @@ background-color: var(--main-color);
 
 #contact {
     background-color: var(--second-color);
-    height: 30vh;
-    margin-top: 0px;
+    height: fit-content;
+    margin: 0px;
     padding: 0;
-    margin-bottom: 0;
+    /* margin-bottom: 150px; */
 }
 
 .contact-title {
@@ -567,6 +567,28 @@ background-color: var(--main-color);
 .contact-title:hover {
     transition: transform 0.1s;
     transform: scale(1.05);
+}
+
+.socials {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+    /* padding-bottom: 15px; */
+}
+
+#instagram, #fb, #twitter {
+    padding: 5px;
+    margin: 25px;
+}
+
+.footer-text {
+    background-color: var(--main-color);
+    font-family: 'DM Mono', monospace;
+    color: var(--second-color);
+    text-align: center;
+    padding: 1rem 0;
+
 }
 
 /* ------------------------------------------- */

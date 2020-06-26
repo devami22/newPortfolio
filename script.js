@@ -13,11 +13,11 @@ contactForm.addEventListener('submit', function (event) {
     contact.innerHTML ="<a href='#'>thanks for your message!</a>"
 });
 
-const skills = document.querySelector("h5").innerHTML;
+const skills = [...document.querySelectorAll(`[data-name="skill-box"]`)];
 console.log(skills)
 
-skills[3].addEventListener('mouseover', function (event) {
-    event.style.color = "red";
-    });
+// skills[3].addEventListener('mouseover', function (event) {
+//     event.style.color = "red";
+//     });
 
 
