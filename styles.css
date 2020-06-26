@@ -349,9 +349,13 @@ body {
     align-self: center;
     justify-self: center;
     margin-top: 0;
-    padding: 2rem;
+    padding: 3rem 4rem 2rem 0rem;
     margin-bottom: 5px;
     font-family: 'DM Mono', monospace;
+}
+.skills-title:hover {
+    transition: transform 0.1s;
+    transform: scale(1.05);
 }
 
 
@@ -415,7 +419,11 @@ body {
     padding: 0 2em;
     margin-bottom: 40px;
     color: var(--second-color);
+}
 
+.portfolio-title:hover {
+    transition: transform 0.1s;
+    transform: scale(1.05);
 }
 
 .portfolio-grid {
@@ -491,6 +499,11 @@ background-color: var(--main-color);
     margin-bottom: 25px;
 }
 
+.education-title:hover {
+    transition: transform 0.1s;
+    transform: scale(1.05);
+}
+
 .timeline {
     display: flex;
     flex-wrap: wrap;
@@ -549,6 +562,11 @@ background-color: var(--main-color);
 .contact-title {
     font-family: 'DM Mono', monospace;
     color: var(--main-color);
+}
+
+.contact-title:hover {
+    transition: transform 0.1s;
+    transform: scale(1.05);
 }
 
 /* ------------------------------------------- */

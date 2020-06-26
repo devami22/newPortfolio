@@ -8,9 +8,9 @@ contactForm.addEventListener('submit', function (event) {
     } else { 
         console.log(name);
     }
-    const education = document.querySelector(".education-title");
+    const contact = document.querySelector(".contact-title");
 
-    education.innerHTML ="<a href='#'>something else</a>"
+    contact.innerHTML ="<a href='#'>thanks for your message!</a>"
 });
 
 const skills = document.querySelector("h5").innerHTML;
