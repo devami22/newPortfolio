@@ -600,7 +600,7 @@ background-color: var(--main-color);
     }
     .profile-img {
         align-self: center;
-        margin-bottom: 2%;
+        margin-bottom: 10px;
         left: 0;
         height: auto;
         width: 25vw;
@@ -608,7 +608,37 @@ background-color: var(--main-color);
         border-width: 0.25em;
         border-color: var(--second-color);
         position: relative;
+        box-shadow: none;
         /* left: 0%;
         z-index: 2; */
+    }
+    .outer-circle {
+        display: none;
+    }
+
+    .main-title {
+        margin-bottom: 25px;
+    }
+
+    .header-p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #nav-menu {
+        text-align:  center;
+    }
+
+    #download-btn {
+        display: none;
+    }
+
+    .intro-text {
+        margin-bottom: 25px;
+        /* padding-bottom: 25px; */
+    }
+
+    #title-hero {
+        font-size: 50px;
     }
 }
