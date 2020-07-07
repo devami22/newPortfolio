@@ -571,15 +571,21 @@ background-color: var(--main-color);
 
 .socials {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     margin: 0px;
     /* padding-bottom: 15px; */
 }
 
-#instagram, #fb, #twitter {
+#instagram, #fb, #twitter, #linkedin, #github {
     padding: 5px;
     margin: 25px;
+}
+
+#instagram:hover, #fb:hover, #twitter:hover, #linkedin:hover, #github:hover {
+    transition: transform 0.1s;
+    transform: scale(1.05);
 }
 
 .footer-text {
@@ -627,14 +633,24 @@ background-color: var(--main-color);
 
     #nav-menu {
         text-align:  center;
+        color: black;
+    }
+    .menu-item {
+        color: var(--second-color);
+        padding: 10px;
+        background-color: var(--main-color);
+        border-radius: 10px;
     }
 
     #download-btn {
         display: none;
+        border-radius: 10px;
     }
 
     .intro-text {
         margin-bottom: 25px;
+        margin-right: 50px;
+        width: 90vw;
         /* padding-bottom: 25px; */
     }
 
