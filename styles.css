@@ -633,7 +633,7 @@ background-color: var(--main-color);
 
     #nav-menu {
         text-align:  center;
-        color: black;
+        text-siz
     }
     .menu-item {
         color: var(--second-color);
@@ -645,6 +645,7 @@ background-color: var(--main-color);
     #download-btn {
         display: none;
         border-radius: 10px;
+        padding: 10px;
     }
 
     .intro-text {
