@@ -360,7 +360,7 @@ body {
 
 
 .skill-box:hover {
-    background-color: var(--third-color);
+    background-color: #D6D6D6;
 }
 
 .html:hover, .css:hover, .and:hover, .javascript:hover, .react:hover, .node:hover {
