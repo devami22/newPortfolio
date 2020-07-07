@@ -633,11 +633,14 @@ background-color: var(--main-color);
 
     #nav-menu {
         text-align:  center;
-        text-siz
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .menu-item {
         color: var(--second-color);
-        padding: 10px;
+        padding: 5px;
         background-color: var(--main-color);
         border-radius: 10px;
     }
@@ -645,10 +648,13 @@ background-color: var(--main-color);
     #download-btn {
         display: none;
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .intro-text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         margin-bottom: 25px;
         margin-right: 50px;
         width: 90vw;
@@ -657,5 +663,26 @@ background-color: var(--main-color);
 
     #title-hero {
         font-size: 50px;
+        padding-bottom: 10px;
+    }
+    #skills-section {
+        margin-top: 12rem;
+    }
+    .skills-title, .portfolio-title, .contact-title {
+        font-size: 30px;
+    }
+    .education-title {
+        font-size: 20px;
+    }
+    .year {
+        font-size: 14px;
+    }
+    .info {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    #instagram, #fb, #twitter, #linkedin, #github {
+        padding: 0;
+        margin: 3px;
     }
 }
