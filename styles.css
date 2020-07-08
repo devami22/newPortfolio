@@ -601,6 +601,12 @@ background-color: var(--main-color);
 /* ------------------------------------------- */
 /* RESPONSIVE ATTRIBUTES */
 
+@media (max-width: 1080px) {
+    #title-hero {
+        font-size: 65px;
+    }
+}
+
 @media (max-width: 900px) {
     .top-container {
         flex-direction: column;
@@ -630,6 +636,7 @@ background-color: var(--main-color);
     .header-p {
         margin-top: 10px;
         margin-bottom: 10px;
+        visibility: hidden;
     }
 
     #nav-menu {
@@ -667,7 +674,7 @@ background-color: var(--main-color);
         padding-bottom: 10px;
     }
     #skills-section {
-        margin-top: 220px;
+        margin-top: 10rem;
     }
     .skills-title, .portfolio-title, .contact-title {
         font-size: 30px;
@@ -689,5 +696,11 @@ background-color: var(--main-color);
     #instagram, #fb, #twitter, #linkedin, #github {
         padding: 0;
         margin: 3px;
+    }
+}
+
+@media (max-width: 570px) {
+    #title-hero {
+        font-size: 35px;
     }
 }
