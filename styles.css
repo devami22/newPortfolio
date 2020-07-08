@@ -150,8 +150,8 @@ body {
 /* RIGHT SIDE */
 
 .bg {
-    animation:slide 5s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #14213D 50%, #FCA311 50%);
+    animation:slide 10s ease-in-out infinite alternate;
+    background-image: linear-gradient(-45deg, #14213D 50%, #414141 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -353,10 +353,10 @@ body {
     margin-bottom: 5px;
     font-family: 'DM Mono', monospace;
 }
-.skills-title:hover {
+/* .skills-title:hover {
     transition: transform 0.1s;
     transform: scale(1.05);
-}
+} */
 
 
 .skill-box:hover {
@@ -421,10 +421,10 @@ body {
     color: var(--second-color);
 }
 
-.portfolio-title:hover {
+/* .portfolio-title:hover {
     transition: transform 0.1s;
     transform: scale(1.05);
-}
+} */
 
 .portfolio-grid {
     display: flex;
@@ -499,10 +499,10 @@ background-color: var(--main-color);
     margin-bottom: 25px;
 }
 
-.education-title:hover {
+/* .education-title:hover {
     transition: transform 0.1s;
     transform: scale(1.05);
-}
+} */
 
 .timeline {
     display: flex;
@@ -565,10 +565,10 @@ background-color: var(--main-color);
     color: var(--main-color);
 }
 
-.contact-title:hover {
+/* .contact-title:hover {
     transition: transform 0.1s;
     transform: scale(1.05);
-}
+} */
 
 .socials {
     display: flex;
